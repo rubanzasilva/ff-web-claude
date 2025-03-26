@@ -11,7 +11,7 @@ const ResearchFocus: FC = () => {
           <div>
             <h3 className="text-2xl font-bold text-gray-800 mb-6">Key Questions</h3>
             <ul className="space-y-4 list-disc pl-6 text-gray-700">
-              <li>How can we make AI's predictive power useful in practice on a larger scale?</li>
+              <li>How can we make AI&apos;s predictive power useful in practice on a larger scale?</li>
               <li>How can we use foundation models to improve existing products or create new experiences?</li>
               <li>How can we make AI more efficient and cost-effective making it easier to apply in practice?</li>
               <li>How do we connect model results to business decisions?</li>

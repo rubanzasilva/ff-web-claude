@@ -42,10 +42,10 @@ const Approach: FC = () => {
           <div className="bg-amber-50 p-8 rounded-lg">
             <h3 className="text-2xl font-bold text-orange-500 mb-6">The Problem</h3>
             <ul className="list-disc pl-6 space-y-4">
-              <li>AI is called "the new electricity" with transformative potential</li>
+              <li>AI is called &ldquo;the new electricity&rdquo; with transformative potential</li>
               <li>Despite countless theoretical use cases, practical implementation lags behind</li>
               <li>Most AI value remains untapped and undiscovered</li>
-              <li>There's a significant gap between research and real-world applications</li>
+              <li>There&apos;s a significant gap between research and real-world applications</li>
             </ul>
           </div>
         </div>

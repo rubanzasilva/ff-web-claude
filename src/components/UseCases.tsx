@@ -4,7 +4,6 @@ import { FC } from 'react';
 interface UseCaseProps {
   title: string;
   challenges: string[];
-  currentSolution: string;
   ourSolution: React.ReactNode;
   quote: string;
   demoTitle: string;
@@ -13,7 +12,6 @@ interface UseCaseProps {
 const UseCase: FC<UseCaseProps> = ({ 
   title, 
   challenges, 
-  currentSolution, 
   ourSolution, 
   quote,
   demoTitle
@@ -80,11 +78,10 @@ const UseCases: FC = () => {
             "Understocking creates fulfillment issues and customer dissatisfaction",
             "Current solutions: Traditional time series analysis like ARIMA, statistical methods"
           ]}
-          currentSolution="Traditional time series analysis like ARIMA, statistical methods"
           ourSolution={
             <>
               <p className="mb-4">
-                We leverage an enterprise's various data sources to build a dynamic inventory management 
+                We leverage an enterprise&apos;s various data sources to build a dynamic inventory management 
                 system leveraging advanced ML algorithms such as:
               </p>
               <ul className="list-disc pl-6 space-y-2 mb-4">
@@ -112,7 +109,6 @@ const UseCases: FC = () => {
             "Uganda and similar regions need accessible, reliable diagnostic support",
             "Current solutions: Done by humans"
           ]}
-          currentSolution="Done by humans"
           ourSolution={
             <>
               <p className="mb-4">
