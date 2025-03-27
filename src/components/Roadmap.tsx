@@ -1,14 +1,7 @@
-// src/components/Roadmap.tsx
-import { FC } from 'react';
+import React from 'react';
 
-type RoadmapPhaseProps = {
-  phase: number;
-  title: string;
-  description: string;
-  alignment: 'left' | 'right';
-};
-
-const RoadmapPhase: FC<RoadmapPhaseProps> = ({ phase, title, description, alignment }) => {
+// Desktop/Tablet Phase Component (left/right alternating)
+const DesktopRoadmapPhase = ({ phase, title, description, alignment }) => {
   return (
     <div className={`relative flex ${alignment === 'left' ? 'justify-end md:pr-12' : 'justify-start md:pl-12'} my-8`}>
       <div className="absolute top-0 bottom-0 left-1/2 w-px bg-orange-400 -translate-x-1/2"></div>
@@ -26,7 +19,28 @@ const RoadmapPhase: FC<RoadmapPhaseProps> = ({ phase, title, description, alignm
   );
 };
 
-const Roadmap: FC = () => {
+// Mobile Phase Component (vertical stacked)
+const MobileRoadmapPhase = ({ phase, title, description }) => {
+  return (
+    <div className="relative mb-16 last:mb-0">
+      {/* Timeline elements */}
+      <div className="absolute left-4 top-0 bottom-0 w-0.5 bg-orange-300"></div>
+      <div className="absolute left-4 top-6 w-4 h-4 rounded-full bg-orange-500 -ml-1.5 z-10"></div>
+      
+      {/* Content */}
+      <div className="pl-12">
+        <span className="inline-block px-4 py-1 rounded-full bg-amber-100 text-orange-500 text-sm font-medium mb-3">
+          Phase {phase}
+        </span>
+        
+        <h3 className="text-xl font-bold text-gray-800 mb-2">{title}</h3>
+        <p className="text-gray-700">{description}</p>
+      </div>
+    </div>
+  );
+};
+
+const Roadmap = () => {
   const phases = [
     {
       phase: 1,
@@ -60,9 +74,22 @@ const Roadmap: FC = () => {
       <div className="container mx-auto px-4 md:px-8 max-w-6xl">
         <h2 className="text-4xl font-bold text-orange-500 mb-12">Roadmap</h2>
         
-        <div className="relative">
+        {/* Mobile View - Only visible on small screens */}
+        <div className="md:hidden">
+          {phases.map((phase) => (
+            <MobileRoadmapPhase
+              key={phase.phase}
+              phase={phase.phase}
+              title={phase.title}
+              description={phase.description}
+            />
+          ))}
+        </div>
+        
+        {/* Desktop/Tablet View - Hidden on mobile */}
+        <div className="hidden md:block relative">
           {phases.map((phase, index) => (
-            <RoadmapPhase
+            <DesktopRoadmapPhase
               key={phase.phase}
               phase={phase.phase}
               title={phase.title}
