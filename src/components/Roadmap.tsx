@@ -1,28 +1,20 @@
 // src/components/Roadmap.tsx
 import { FC } from 'react';
 
-// Interfaces for prop types
-interface DesktopRoadmapPhaseProps {
+// Define types for the props
+type RoadmapPhaseProps = {
   phase: number;
   title: string;
   description: string;
-  alignment: 'left' | 'right';
-}
+  alignment?: 'left' | 'right';
+};
 
-interface MobileRoadmapPhaseProps {
-  phase: number;
-  title: string;
-  description: string;
-}
-
-interface PhaseData {
-  phase: number;
-  title: string;
-  description: string;
-}
-
-// Desktop/Tablet Phase Component (left/right alternating)
-const DesktopRoadmapPhase: FC<DesktopRoadmapPhaseProps> = ({ phase, title, description, alignment }) => {
+const RoadmapPhase: FC<RoadmapPhaseProps> = ({ 
+  phase, 
+  title, 
+  description, 
+  alignment = 'left'
+}) => {
   return (
     <div className={`relative flex ${alignment === 'left' ? 'justify-end md:pr-12' : 'justify-start md:pl-12'} my-8`}>
       <div className="absolute top-0 bottom-0 left-1/2 w-px bg-orange-400 -translate-x-1/2"></div>
@@ -40,8 +32,11 @@ const DesktopRoadmapPhase: FC<DesktopRoadmapPhaseProps> = ({ phase, title, descr
   );
 };
 
-// Mobile Phase Component (vertical stacked)
-const MobileRoadmapPhase: FC<MobileRoadmapPhaseProps> = ({ phase, title, description }) => {
+const MobileRoadmapPhase: FC<Omit<RoadmapPhaseProps, 'alignment'>> = ({ 
+  phase, 
+  title, 
+  description 
+}) => {
   return (
     <div className="relative mb-16 last:mb-0">
       {/* Timeline elements */}
@@ -62,7 +57,7 @@ const MobileRoadmapPhase: FC<MobileRoadmapPhaseProps> = ({ phase, title, descrip
 };
 
 const Roadmap: FC = () => {
-  const phases: PhaseData[] = [
+  const phases: Array<Omit<RoadmapPhaseProps, 'alignment'>> = [
     {
       phase: 1,
       title: "Launch initial use cases",
@@ -110,7 +105,7 @@ const Roadmap: FC = () => {
         {/* Desktop/Tablet View - Hidden on mobile */}
         <div className="hidden md:block relative">
           {phases.map((phase, index) => (
-            <DesktopRoadmapPhase
+            <RoadmapPhase
               key={phase.phase}
               phase={phase.phase}
               title={phase.title}
