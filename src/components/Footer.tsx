@@ -24,6 +24,11 @@ const Footer: FC = () => {
                   suppport@flexiblefunctions.com
                 </a>
               </li>
+              <li>
+                <p>
+                  +256 768 320 199
+                </p>
+              </li>
               
             </ul>
           </div>

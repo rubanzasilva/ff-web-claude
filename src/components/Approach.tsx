@@ -1,7 +1,6 @@
-// src/components/Approach.tsx
-import { FC } from 'react';
+import React from 'react';
 
-const Approach: FC = () => {
+const ApproachSection = () => {
   return (
     <section id="approach" className="py-16 md:py-24 bg-white">
       <div className="container mx-auto px-4 md:px-8 max-w-6xl">
@@ -28,9 +27,9 @@ const Approach: FC = () => {
         </div>
         
         <div className="grid md:grid-cols-2 gap-8">
-          <div className="bg-amber-50 p-8 rounded-lg">
+          <div className="bg-amber-50 p-8 rounded-lg border-2 border-orange-200">
             <h3 className="text-2xl font-bold text-orange-500 mb-6">We believe useful AI applications emerge when we:</h3>
-            <ul className="list-disc pl-6 space-y-4">
+            <ul className="list-disc pl-6 space-y-4 text-gray-800 font-medium">
               <li>Engage with end users and domain experts</li>
               <li>Identify their most pressing challenges</li>
               <li>Apply AI solutions to these specific problems</li>
@@ -41,7 +40,7 @@ const Approach: FC = () => {
           
           <div className="bg-amber-50 p-8 rounded-lg">
             <h3 className="text-2xl font-bold text-orange-500 mb-6">The Problem</h3>
-            <ul className="list-disc pl-6 space-y-4">
+            <ul className="list-disc pl-6 space-y-4 text-gray-700">
               <li>AI is called &ldquo;the new electricity&rdquo; with transformative potential</li>
               <li>Despite countless theoretical use cases, practical implementation lags behind</li>
               <li>Most AI value remains untapped and undiscovered</li>
@@ -54,4 +53,4 @@ const Approach: FC = () => {
   );
 };
 
-export default Approach;
+export default ApproachSection;
