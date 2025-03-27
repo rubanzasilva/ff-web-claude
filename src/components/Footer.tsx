@@ -10,7 +10,7 @@ const Footer: FC = () => {
       <div className="container mx-auto px-4 md:px-8 max-w-6xl">
         <div className="grid md:grid-cols-3 gap-8">
           <div>
-            <h3 className="text-2xl font-bold text-orange-400 mb-4">Flexible Functions</h3>
+            <h3 className="text-2xl font-bold text-orange-400 mb-4">Flexible Functions AI</h3>
             <p className="text-gray-300 mb-4">
               Industrial Research & Development AI Lab bridging research with real-world applications.
             </p>
@@ -66,7 +66,7 @@ const Footer: FC = () => {
         </div>
         
         <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-          <p>&copy; {currentYear} Flexible Functions AI. All rights reserved.</p>
+          <p>&copy; {currentYear} Flexible Functions AI Lab. All rights reserved.</p>
         </div>
       </div>
     </footer>

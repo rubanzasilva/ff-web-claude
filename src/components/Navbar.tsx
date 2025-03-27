@@ -7,7 +7,7 @@ const Navbar: FC = () => {
     <nav className="flex items-center justify-between py-4 px-8 md:px-16 bg-white shadow-sm">
       <div className="flex items-center">
         <Link href="/" className="text-xl font-semibold text-orange-500">
-          Flexible Functions
+          Flexible Functions AI
         </Link>
       </div>
       <div className="hidden md:flex space-x-8">
