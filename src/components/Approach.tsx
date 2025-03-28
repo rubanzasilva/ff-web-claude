@@ -10,18 +10,17 @@ const ApproachSection = () => {
           <p className="text-lg">
             Flexible Functions is an industrial research and development AI lab building practical use cases using
             current state of the art machine learning systems in different domains. We do this while researching
-            how to build new user products and experiences while integrating the use of cutting-edge foundation models.
+            how to build new user products and experiences and integrating foundation models.
           </p>
           
           <p className="text-lg">
             We expect the practical aspect of building use cases for AI will inform research on how to take advantage
-            of AI to build new products and experiences and how to tackle the challenges that currently prevent AI 
+            of AI to build new products and experiences. This will also inform us on the challenges that currently prevent AI 
             from being more prevalent across various industries.
           </p>
           
           <p className="text-lg">
-            We believe we can only build useful applications by engaging end users and domain experts and solving
-            what problems we can help them tackle using AI. This approach will increase the adoption of AI and in
+            We believe we can only build useful applications by engaging end users, domain experts to understand the problems they are facing and building custom solutions for them. This approach will increase the adoption of AI and in
             turn lead to increased investment in scaling the field.
           </p>
         </div>

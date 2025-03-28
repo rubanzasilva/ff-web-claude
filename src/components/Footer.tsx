@@ -12,7 +12,7 @@ const Footer: FC = () => {
           <div>
             <h3 className="text-2xl font-bold text-orange-400 mb-4">Flexible Functions AI</h3>
             <p className="text-gray-300 mb-4">
-              Industrial Research & Development AI Lab bridging research with real-world applications.
+              Industrial Research & Development AI Lab building practical AI applications.
             </p>
           </div>
           

@@ -4,6 +4,7 @@ import { FC } from 'react';
 interface UseCaseProps {
   title: string;
   challenges: string[];
+  currentSolution: React.ReactNode;
   ourSolution: React.ReactNode;
   quote: string;
   demoTitle: string;
@@ -12,6 +13,7 @@ interface UseCaseProps {
 const UseCase: FC<UseCaseProps> = ({ 
   title, 
   challenges, 
+  currentSolution,
   ourSolution, 
   quote,
   demoTitle
@@ -30,7 +32,12 @@ const UseCase: FC<UseCaseProps> = ({
               ))}
             </ul>
           </div>
-          
+          <div>
+            <h4 className="text-xl font-semibold text-gray-800 mb-4">Current state of the art:</h4>
+            <div className="text-gray-700">
+              {currentSolution}
+            </div>
+          </div>
           <div>
             <h4 className="text-xl font-semibold text-gray-800 mb-4">Our Solution:</h4>
             <div className="text-gray-700">
@@ -76,27 +83,42 @@ const UseCases: FC = () => {
             "Supply chains are increasingly vulnerable to disruptions",
             "Overstocking leads to waste, tied-up capital, and missed opportunities",
             "Understocking creates fulfillment issues and customer dissatisfaction",
-            "Current solutions: Traditional time series analysis like ARIMA, statistical methods"
           ]}
+          currentSolution={
+            <>
+              <p className="mb-4">
+              Traditional time series analysis like ARIMA, statistical methods 
+              </p>
+              
+
+            </>
+          }
           ourSolution={
             <>
               <p className="mb-4">
                 We leverage an enterprise&apos;s various data sources to build a dynamic inventory management 
-                system leveraging advanced ML algorithms such as:
+                system. This uses an ensemble of advanced ML algorithms such as large-scale neural networks, Automl solutions,
+                and the more traditional gradient boosting machines to predict with pinpoint accuracy:
+                
               </p>
               <ul className="list-disc pl-6 space-y-2 mb-4">
-                <li>Large scale neural networks</li>
-                <li>AutoML solutions</li>
-                <li>Traditional gradient boosting machines</li>
+                <li>What every customer will buy</li>
+                <li>When they wll make each purchase</li>
+                <li>Which location they will buy from</li>
+                <li> What price they are willing to pay</li>
               </ul>
+              {/* 
               <p>
                 Our system can forecast demand at all levels with high accuracy, predict when and what 
                 customers will purchase, optimize pricing and customer experience, and ensure the right 
                 products are in the right place at the right time.
               </p>
+              */}
             </>
           }
-          quote="Imagine predicting with pinpoint accuracy: What every customer will buy, when they'll make each purchase, which location they'll buy from, and what price they're willing to pay. This is the future we're building at Flexible Functions AI."
+          quote="Our system can forecast demand at all levels with high accuracy, predict when and what 
+                customers will purchase, optimize pricing and customer experience, and ensure the right 
+                products are in the right place at the right time. This is the future we're building at Flexible Functions AI."
           demoTitle="Demand Forecasting Demo"
         />
         
@@ -106,25 +128,28 @@ const UseCases: FC = () => {
             "Medical diagnosis is complex and time-intensive",
             "Healthcare providers in resource-constrained settings face significant challenges",
             "Diagnostic errors can lead to improper treatment and poor patient outcomes",
-            "Uganda and similar regions need accessible, reliable diagnostic support",
-            "Current solutions: Done by humans"
           ]}
+          currentSolution={
+            <>
+              <p className="mb-4">
+              Coming up with differential diagnoses is currently done by humans
+              based on signs and symptom presentations, The Doctor’s knowledge, and clinical guidelines.
+              </p>
+              
+
+            </>
+          }
           ourSolution={
             <>
               <p className="mb-4">
-                An advanced LLM application built on user inputs, disease labels and the 
-                Uganda clinical guidelines that:
+              An advanced LLM application built on user inputs, disease labels, and the Uganda clinical guidelines.
+              Once patient complaints, medical history, etc are passed to it, it returns a differential diagnosis. We are building this to assist doctors.
               </p>
-              <ul className="list-disc pl-6 space-y-2 mb-4">
-                <li>Takes patient complaints as user input</li>
-                <li>Processes symptoms through a neural network fine-tuned on medical corpus</li>
-                <li>Incorporates Uganda clinical guidelines to ensure localized relevance</li>
-                <li>Returns a comprehensive differential diagnosis to assist healthcare providers</li>
-                <li>Leverages transfer learning by fine-tuning only the last layer of pre-trained models</li>
-              </ul>
+              {/* 
               <p className="mb-4">
                 <strong>Technical Approach:</strong>
               </p>
+              
               <ul className="list-disc pl-6 space-y-2">
                 <li>Start with large pre-trained language models</li>
                 <li>Train on extensive medical corpus</li>
@@ -132,6 +157,7 @@ const UseCases: FC = () => {
                 <li>Integrate Uganda clinical guidelines and disease correlations</li>
                 <li>Optimize for accuracy with minimal computational resources</li>
               </ul>
+              */}
             </>
           }
           quote="We are going for this due to our technical expertise given that Daniel Hosana is a doctor, and as a coder Silver can execute on it."

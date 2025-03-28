@@ -9,7 +9,7 @@ const Mission: FC = () => {
         
         <div className="space-y-6 text-gray-700">
           <p className="text-lg">
-            Build components of the AI application layer that bridge research with real-world applications.
+            Build components of the AI application layer.
           </p>
         </div>
       </div>

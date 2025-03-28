@@ -19,7 +19,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Flexible Functions AI - Industrial Research & Development AI Lab",
-  description: "We build practical AI applications that bridge research with real-world solutions",
+  description: "We build practical AI applications and use that to inform our research",
 };
 
 export default function RootLayout({

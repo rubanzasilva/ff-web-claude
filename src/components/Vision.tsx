@@ -8,15 +8,15 @@ const Vision: FC = () => {
         <h2 className="text-4xl font-bold text-orange-500 mb-12">Our Vision</h2>
         
         <div className="space-y-6 text-gray-700">
-          <p className="text-xl font-medium">AI is the new electricity</p>
+          <p className="text-xl font-medium">Deliver value with AI through practical use cases</p>
           
           <p className="text-lg">
-            and has the potential to transform multiple industries. We believe we are entering one of the greatest 
+           AI has been called the new electricity and has the potential to transform multiple industries. We believe we are entering one of the greatest 
             eras of technology.
           </p>
           
           <p className="text-lg">
-            While we hear a lot about potential use cases and how AI is going to automate everything, much of the 
+            While we hear a lot about potential use cases, much of the 
             value in AI is still untapped and undiscovered. To unleash the potential of AI, we are bridging the 
             gap between research and real-world applications by building the application layer for AI.
           </p>

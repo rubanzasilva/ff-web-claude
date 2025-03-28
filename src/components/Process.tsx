@@ -35,13 +35,13 @@ const Process: FC = () => {
     },
     {
       number: 3, 
-      title: "Master and apply large neural networks",
-      description: "Leveraging the power of state-of-the-art neural architectures."
+      title: "Leverage foundational models",
+      description: "Leveraging the power of the latest foundation models to build new products."
     },
     {
       number: 4,
       title: "Develop open GUI low-code workflow tools",
-      description: "Making AI accessible to non-technical domain experts."
+      description: "Making AI easy to use for non-technical domain experts."
     },
     {
       number: 5,
@@ -51,24 +51,20 @@ const Process: FC = () => {
     {
       number: 6,
       title: "Benchmark with Kaggle competitions",
-      description: "Testing our approaches against industry standards."
+      description: "Testing our approaches against industry competition."
     },
     {
       number: 7,
       title: "Identify and build new use cases",
       description: "Continuously exploring new applications of AI technology."
     },
-    {
-      number: 8,
-      title: "Fine-tune models for specific scenarios",
-      description: "Adapting foundation models to specialized domain needs."
-    }
+   
   ];
 
   return (
     <section id="process" className="py-16 md:py-24 bg-gray-50">
       <div className="container mx-auto px-4 md:px-8 max-w-6xl">
-        <h2 className="text-4xl font-bold text-orange-500 mb-12">Our Process</h2>
+        <h2 className="text-4xl font-bold text-orange-500 mb-12">What we are doing</h2>
         
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {steps.map((step) => (
