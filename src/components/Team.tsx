@@ -22,7 +22,7 @@ const TeamMember: FC<TeamMemberProps> = ({ name, title, description, imagePath, 
           src={imagePath} 
           alt={name} 
           fill
-          style={{objectFit: 'cover'}}
+          style={{objectFit: 'cover',objectPosition: 'center top'}}
           priority
         />
       </div>
@@ -103,7 +103,8 @@ const Team: FC = () => {
       name: "Silver Rubanza",
       title: "Chief Technology Officer",
       description: "Machine learning engineer with experience building end to end machine learning solutions, sales and marketing experience.",
-      imagePath: "/images/silver.jpg",
+      //imagePath: "/images/silver.jpg",
+      imagePath: "https://d3q0oijmiduzg2.cloudfront.net/rubanzasilver/silverPotraitCompressed.webp",
       socialLinks: [
         {
           url: "https://www.rubanzasilver.com/", // Replace with your actual website URL
