@@ -103,8 +103,8 @@ const Team: FC = () => {
       name: "Silver Rubanza",
       title: "Chief Technology Officer",
       description: "Machine learning engineer with experience building end to end machine learning solutions, sales and marketing experience.",
-      //imagePath: "/images/silver.jpg",
-      imagePath: "https://d3q0oijmiduzg2.cloudfront.net/rubanzasilver/silverPotraitCompressed.webp",
+      imagePath: "/images/silverPotrait.jpeg",
+      //imagePath: "https://d3q0oijmiduzg2.cloudfront.net/rubanzasilver/silverPotraitCompressed.webp",
       socialLinks: [
         {
           url: "https://www.rubanzasilver.com/", // Replace with your actual website URL
