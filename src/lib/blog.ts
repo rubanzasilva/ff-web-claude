@@ -36,7 +36,7 @@ export interface BlogPost {
       author: "Silver Rubanza",
       excerpt: "Deploying and serving a binary classification machine learning model using modal",
       externalUrl: "https://nbsanity.com/static/ceedbbdf5d29da76c0b4c0935516c841/explanation.html",
-      coverImage: "https://d3q0oijmiduzg2.cloudfront.net/rubanzasilver/dalle_deployment.webp"
+      coverImage: "https://d3q0oijmiduzg2.cloudfront.net/rubanzasilver/ss.webp"
     },
     // Add more blog posts with external links as needed
   ];
