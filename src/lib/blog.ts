@@ -18,7 +18,7 @@ export interface BlogPost {
       author: "Silver Rubanza",
       excerpt: "Exploring how we built an AI system for assisted differential diagnosis using symptom-disease classification.",
       externalUrl: "https://nbsanity.com/static/476a4a160704607357fa6afe06955b75/symptom-disease-1.2.html",
-      coverImage: "/images/blog/symptom-disease.jpg" // Optional: you can host thumbnails locally
+      coverImage: "https://d3q0oijmiduzg2.cloudfront.net/rubanzasilver/symtd.webp" // Optional: you can host thumbnails locally
     },
     {
       id: "mental-health-classifier",
