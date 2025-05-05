@@ -21,12 +21,21 @@ export interface BlogPost {
       coverImage: "/images/blog/symptom-disease.jpg" // Optional: you can host thumbnails locally
     },
     {
-      id: "demand-forecasting",
-      title: "ML/AI model serving and deployment with BentoML",
+      id: "mental-health-classifier",
+      title: "ML/AI classification model deployment and serving with BentoML and BentoCloud",
       date: "2025-02-01",
       author: "Silver Rubanza",
-      excerpt: "Serving and deploying a binary classification machine learning model using BentoML",
+      excerpt: "Serving and deploying a mental health binary classification machine learning model using BentoML",
       externalUrl: "https://nbsanity.com/static/ac40bb062434c7446906d3eb8875e061/load.html",
+      coverImage: "https://d3q0oijmiduzg2.cloudfront.net/rubanzasilver/dalle_deployment.webp"
+    },
+    {
+      id: "demand-forecasting-regressor",
+      title: "ML/AI regression model deployment and serving with Modal cloud",
+      date: "2025-03-05",
+      author: "Silver Rubanza",
+      excerpt: "Serving and deploying a binary classification machine learning model using modal",
+      externalUrl: "https://nbsanity.com/static/ceedbbdf5d29da76c0b4c0935516c841/explanation.html",
       coverImage: "https://d3q0oijmiduzg2.cloudfront.net/rubanzasilver/dalle_deployment.webp"
     },
     // Add more blog posts with external links as needed
