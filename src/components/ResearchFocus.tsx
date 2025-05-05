@@ -28,7 +28,7 @@ const ResearchFocus: FC = () => {
               <li>Unsupervised and reinforcement learning</li>
               <li>Synthetic data generation for edge cases</li>
               <li>Low-code workflow tools for rapid experimentation</li>
-              <li>Better / finetuned prompting</li>
+              <li>Better finetuning, and prompting</li>
               <li>Applying AI to the Enterprise, Healthcare, Creative work (Branding, design) and Agricultural sectors</li>
             </ul>
           </div>

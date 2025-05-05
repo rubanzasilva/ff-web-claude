@@ -20,6 +20,9 @@ const Navbar: FC = () => {
         <Link href="#research" className="text-gray-700 hover:text-orange-500">
           Research
         </Link>
+        <Link href="/blog" className="text-gray-700 hover:text-orange-500">
+          Blog
+        </Link>
         <Link href="#use-cases" className="text-gray-700 hover:text-orange-500">
           Use Cases
         </Link>

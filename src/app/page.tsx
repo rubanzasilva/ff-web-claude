@@ -12,6 +12,7 @@ import Roadmap from '@/components/Roadmap';
 import Values from '@/components/Values';
 import Team from '@/components/Team';
 import Footer from '@/components/Footer';
+import BlogPreview from '@/components/BlogPreview';
 
 const Home: FC = () => {
   return (
@@ -23,6 +24,7 @@ const Home: FC = () => {
       <Approach />
       <Process />
       <ResearchFocus />
+      <BlogPreview />
       <UseCases />
       <Roadmap />
       <Values />
