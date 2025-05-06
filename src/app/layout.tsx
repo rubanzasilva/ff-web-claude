@@ -1,18 +1,26 @@
 // src/app/layout.tsx
-
 import { SpeedInsights } from '@vercel/speed-insights/next';
 import { Analytics } from '@vercel/analytics/next';
 import GA_HT_Analytics from '@/components/Analytics';
 import GoogleAnalytics from '@/components/GoogleAnalytics';
-
 import type { Metadata } from "next";
-import { JetBrains_Mono } from "next/font/google";
+import { JetBrains_Mono, Roboto_Mono } from "next/font/google";
 import "./globals.css";
 
+// JetBrains Mono for headings
 const jetbrainsMono = JetBrains_Mono({
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"],
   display: "swap",
+  variable: "--font-jetbrains-mono",
+});
+
+// Roboto Mono for body text
+const robotoMono = Roboto_Mono({
+  subsets: ["latin"],
+  weight: ["400", "500", "700"],
+  display: "swap",
+  variable: "--font-roboto-mono",
 });
 
 export const metadata: Metadata = {
@@ -26,12 +34,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="scroll-smooth">
+    <html lang="en" className={`scroll-smooth ${jetbrainsMono.variable} ${robotoMono.variable}`}>
       <head>
         <GA_HT_Analytics />
-        <GoogleAnalytics/>
+        <GoogleAnalytics />
       </head>
-      <body className={jetbrainsMono.className}>
+      <body className="font-body">
         {children}
         <SpeedInsights />
         <Analytics />
