@@ -34,13 +34,8 @@ const config = {
         },
       },
       fontFamily: {
-        // Use JetBrains Mono for headings
-        heading: ['var(--font-jetbrains-mono)', 'monospace'],
-        // Use Roboto Mono for body text
-        body: ['var(--font-roboto-mono)', 'monospace'],
-        // Keep these for compatibility
-        sans: ['var(--font-jetbrains-mono)', 'monospace'],
-        mono: ['var(--font-jetbrains-mono)', 'monospace'],
+        sans: ['var(--font-geist-sans)'],
+        mono: ['var(--font-geist-mono)'],
       },
     },
   },

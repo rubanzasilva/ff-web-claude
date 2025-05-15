@@ -20,14 +20,18 @@
   }
 }
 
+/* Base body styles */
 body {
   background: var(--background);
   color: var(--foreground);
-  /* Remove any font-family declarations here */
+  font-family: var(--font-roboto-mono), monospace;
 }
 
-* {
-  /* Remove any font-family declarations here */
+/* Heading styles */
+h1, h2, h3, h4, h5, h6, 
+.text-lg, .text-xl, .text-2xl, .text-3xl, .text-4xl, .text-5xl, .text-6xl, .text-7xl,
+.font-bold, .font-semibold {
+  font-family: var(--font-jetbrains-mono), monospace;
 }
 
 /* Smooth scrolling for anchor links */
@@ -39,4 +43,3 @@ html {
 section[id] {
   scroll-margin-top: 80px;
 }
-
