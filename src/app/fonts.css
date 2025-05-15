@@ -1,0 +1,17 @@
+/* src/app/fonts.css */
+
+/* Import Roboto Mono directly from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;600;700&display=swap');
+
+/* Apply Roboto Mono to specific elements */
+body,
+p,
+span,
+a,
+button,
+input,
+textarea,
+li,
+div {
+  font-family: 'Roboto Mono', monospace !important;
+} 

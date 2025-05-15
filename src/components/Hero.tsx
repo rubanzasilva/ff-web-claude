@@ -2,6 +2,11 @@
 import Link from 'next/link';
 import { FC } from 'react';
 
+// Define styles with Roboto Mono
+const robotoMonoStyle = {
+  fontFamily: "'Roboto Mono', monospace"
+};
+
 const Hero: FC = () => {
   return (
     <div className="bg-gray-50 py-16 md:py-24">
@@ -10,7 +15,7 @@ const Hero: FC = () => {
           FLEXIBLE<br />FUNCTIONS
         </h1>
         <div className="max-w-3xl mx-auto text-center mb-12">
-          <p className="text-lg text-gray-700">
+          <p className="text-lg text-gray-700" style={robotoMonoStyle}>
             An industrial research and development AI lab building practical use cases using 
             current state of the art machine learning systems in different domains.
           </p>
@@ -19,12 +24,14 @@ const Hero: FC = () => {
           <Link 
             href="#approach" 
             className="bg-orange-500 text-white px-6 py-3 rounded text-center hover:bg-orange-600 transition-colors"
+            style={robotoMonoStyle}
           >
             Our Approach
           </Link>
           <Link 
             href="#use-cases" 
             className="border border-orange-500 text-orange-500 px-6 py-3 rounded text-center hover:bg-orange-50 transition-colors"
+            style={robotoMonoStyle}
           >
             View Use Cases
           </Link>
