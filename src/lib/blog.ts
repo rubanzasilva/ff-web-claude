@@ -31,10 +31,10 @@ export interface BlogPost {
     },
     {
       id: "demand-forecasting-regressor",
-      title: "ML/AI regression model deployment and serving with FastAI & Modal",
+      title: "Building, Deploying & Serving a Sticker Sales Forecasting Machine Learning Model with FastAI & Modal",
       date: "2025-03-05",
       author: "Silver Rubanza",
-      excerpt: "Deploying and serving a binary classification machine learning model using modal",
+      excerpt: "Deploying and serving a regression classification machine learning model using modal",
       externalUrl: "https://www.sticker-sales.flexiblefunctions.com/",
       coverImage: "https://d3q0oijmiduzg2.cloudfront.net/rubanzasilver/ss.webp"
     },
