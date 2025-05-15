@@ -1,19 +1,11 @@
 // src/app/layout.tsx
-
 import { SpeedInsights } from '@vercel/speed-insights/next';
 import { Analytics } from '@vercel/analytics/next';
 import GA_HT_Analytics from '@/components/Analytics';
 import GoogleAnalytics from '@/components/GoogleAnalytics';
 
 import type { Metadata } from "next";
-import { JetBrains_Mono } from "next/font/google";
 import "./globals.css";
-
-const jetbrainsMono = JetBrains_Mono({
-  subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
-  display: "swap",
-});
 
 export const metadata: Metadata = {
   title: "Flexible Functions AI - Industrial Research & Development AI Lab",
@@ -30,8 +22,12 @@ export default function RootLayout({
       <head>
         <GA_HT_Analytics />
         <GoogleAnalytics/>
+        {/* Add font links directly */}
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet" />
       </head>
-      <body className={jetbrainsMono.className}>
+      <body>
         {children}
         <SpeedInsights />
         <Analytics />
