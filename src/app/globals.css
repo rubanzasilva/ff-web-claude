@@ -15,11 +15,11 @@
   }
 }
 
-/* Base styles */
+/* Base styles - now with Courier New */
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: 'Roboto Mono', monospace !important;
+  font-family: 'Courier New', Courier, monospace !important;
 }
 
 /* Force headings to use JetBrains Mono */
@@ -31,6 +31,11 @@ h1, h2, h3, h4, h5, h6 {
 /* Make buttons use JetBrains Mono too */
 button, .btn, a.btn {
   font-family: 'JetBrains Mono', monospace !important;
+}
+
+/* Ensure all paragraph text uses Courier New */
+p, li, span, div:not(h1, h2, h3, h4, h5, h6) {
+  font-family: 'Courier New', Courier, monospace !important;
 }
 
 /* Smooth scrolling for anchor links */
