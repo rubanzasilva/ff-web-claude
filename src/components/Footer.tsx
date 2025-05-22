@@ -1,6 +1,7 @@
 // src/components/Footer.tsx
 import { FC } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 const Footer: FC = () => {
   const currentYear = new Date().getFullYear();
@@ -10,7 +11,16 @@ const Footer: FC = () => {
       <div className="container mx-auto px-4 md:px-8 max-w-6xl">
         <div className="grid md:grid-cols-3 gap-8">
           <div>
-            <h3 className="text-2xl font-bold text-orange-400 mb-4">Flexible Functions AI</h3>
+            {/* Replace text with logo */}
+            <div className="mb-4">
+              <Image 
+                src="/ff_logo.png" 
+                alt="Flexible Functions AI" 
+                width={60}  // Slightly smaller for footer - initial ratio is 180,45
+                height={15}
+                className="object-contain brightness-0 invert" // Makes logo white for dark footer
+              />
+            </div>
             <p className="text-gray-300 mb-4">
               Industrial Research & Development AI Lab building practical AI applications.
             </p>
