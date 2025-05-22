@@ -1,13 +1,21 @@
-// src/components/Navbar.tsx
+// src/components/Navbar.tsx - Logo Only Version
 import Link from 'next/link';
+import Image from 'next/image';
 import { FC } from 'react';
 
 const Navbar: FC = () => {
   return (
     <nav className="flex items-center justify-between py-4 px-8 md:px-16 bg-white shadow-sm">
       <div className="flex items-center">
-        <Link href="/" className="text-xl font-semibold text-orange-500">
-          Flexible Functions AI
+        <Link href="/" className="flex items-center">
+          <Image 
+            src="/ff_logo.png" 
+            alt="Flexible Functions AI" 
+            width={50} 
+            height={50}
+            className="object-contain"
+            priority
+          />
         </Link>
       </div>
       <div className="hidden md:flex space-x-8">
