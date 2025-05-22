@@ -10,6 +10,13 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "Flexible Functions AI - Industrial Research & Development AI Lab",
   description: "We build practical AI applications and use that to inform our research",
+  icons: {
+    icon: [
+      { url: '/favicon.ico', sizes: 'any' },
+      { url: '/favicon.png', type: 'image/png' },
+    ],
+    apple: '/apple-touch-icon.png',
+  },
 };
 
 export default function RootLayout({
@@ -22,6 +29,12 @@ export default function RootLayout({
       <head>
         <GA_HT_Analytics />
         <GoogleAnalytics/>
+        {/* Enhanced favicon support */}
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+        <link rel="icon" href="/favicon.png" type="image/png" />
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+        <link rel="manifest" href="/site.webmanifest" />
+        
         {/* Add font links directly */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
