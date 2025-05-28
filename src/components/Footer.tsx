@@ -18,10 +18,10 @@ const Footer: FC = () => {
                 alt="Flexible Functions AI" 
                 width={60}  // Slightly smaller for footer - initial ratio is 180,45
                 height={15}
-                className="object-contain brightness-0 invert" // Makes logo white for dark footer
+                //className="object-contain brightness-0 invert" // Makes logo white for dark footer
               />
             </div>
-            <p className="text-gray-300 mb-4">
+            <p className="!text-gray-300 hover:text-orange-400 transition-colors">
               Industrial Research & Development AI Lab building practical AI applications.
             </p>
           </div>
@@ -30,12 +30,12 @@ const Footer: FC = () => {
             <h3 className="text-xl font-bold text-white mb-4">Contact Us</h3>
             <ul className="space-y-2 text-gray-300">
               <li>
-                <a href="mailto:suppport@flexiblefunctions.com" className="hover:text-orange-400 transition-colors">
+                <a href="mailto:suppport@flexiblefunctions.com" className="text-gray-300 hover:text-orange-400 transition-colors">
                   suppport@flexiblefunctions.com
                 </a>
               </li>
-              <li>
-                <p>
+              <li >
+                <p className="!text-gray-300 hover:text-orange-400 transition-colors">
                   +256 768 320 199
                 </p>
               </li>
@@ -76,7 +76,7 @@ const Footer: FC = () => {
         </div>
         
         <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-          <p>&copy; {currentYear} Flexible Functions AI Lab. All rights reserved.</p>
+          <p className="!text-gray-300 hover:text-orange-400 transition-colors">&copy; {currentYear} Flexible Functions AI Lab. All rights reserved.</p>
         </div>
       </div>
     </footer>
