@@ -31,7 +31,7 @@ const Footer: FC = () => {
             <ul className="space-y-2 text-gray-300">
               <li>
                 <a href="mailto:suppport@flexiblefunctions.com" className="text-gray-300 hover:text-orange-400 transition-colors">
-                  suppport@flexiblefunctions.com
+                  support@flexiblefunctions.com
                 </a>
               </li>
               <li >
@@ -76,7 +76,7 @@ const Footer: FC = () => {
         </div>
         
         <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-          <p className="!text-gray-300 hover:text-orange-400 transition-colors">&copy; {currentYear} Flexible Functions AI Lab. All rights reserved.</p>
+          <p className="!text-gray-300">&copy; {currentYear} Flexible Functions AI Lab. All rights reserved.</p>
         </div>
       </div>
     </footer>
