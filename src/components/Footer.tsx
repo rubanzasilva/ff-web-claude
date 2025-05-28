@@ -21,7 +21,7 @@ const Footer: FC = () => {
                 className="object-contain brightness-0 invert" // Makes logo white for dark footer
               />
             </div>
-            <p className="text-gray-300 mb-4">
+            <p className="footer-description mb-4 hover:text-orange-400 transition-colors">
               Industrial Research & Development AI Lab building practical AI applications.
             </p>
           </div>
@@ -30,12 +30,12 @@ const Footer: FC = () => {
             <h3 className="text-xl font-bold text-white mb-4">Contact Us</h3>
             <ul className="space-y-2 text-gray-300">
               <li>
-                <a href="mailto:suppport@flexiblefunctions.com" className="hover:text-orange-400 transition-colors">
+                <a href="mailto:suppport@flexiblefunctions.com" className="text-gray-300 hover:text-orange-400 transition-colors">
                   suppport@flexiblefunctions.com
                 </a>
               </li>
-              <li>
-                <p>
+              <li >
+                <p className="footer-description mb-4">
                   +256 768 320 199
                 </p>
               </li>
