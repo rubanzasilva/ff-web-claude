@@ -21,21 +21,21 @@ const Footer: FC = () => {
                 className="object-contain brightness-0 invert" // Makes logo white for dark footer
               />
             </div>
-            <p className="text-gray-300 mb-4">
+            <p className="text-gray-500 mb-4">
               Industrial Research & Development AI Lab building practical AI applications.
             </p>
           </div>
           
           <div>
             <h3 className="text-xl font-bold text-white mb-4">Contact Us</h3>
-            <ul className="space-y-2 text-gray-300">
+            <ul className="space-y-2">
               <li>
-                <a href="mailto:suppport@flexiblefunctions.com" className="hover:text-orange-400 transition-colors">
+                <a href="mailto:suppport@flexiblefunctions.com" className="text-gray-500 hover:text-orange-400 transition-colors">
                   suppport@flexiblefunctions.com
                 </a>
               </li>
               <li>
-                <p>
+                <p className="text-gray-500">
                   +256 768 320 199
                 </p>
               </li>
