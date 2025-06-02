@@ -18,10 +18,9 @@ const Footer: FC = () => {
                 alt="Flexible Functions AI" 
                 width={60}  // Slightly smaller for footer - initial ratio is 180,45
                 height={15}
-                //className="object-contain brightness-0 invert" // Makes logo white for dark footer
               />
             </div>
-            <p className="!text-gray-300 hover:text-orange-400 transition-colors">
+            <p className="!text-gray-300 hover:text-orange-400 transition-colors mb-4">
               Industrial Research & Development AI Lab building practical AI applications.
             </p>
           </div>
@@ -36,7 +35,9 @@ const Footer: FC = () => {
               </li>
               <li >
                 <p className="!text-gray-300 hover:text-orange-400 transition-colors">
+                  <a href='tel:+256768320199' className="hover:text-orange-400 transition-colors">
                   +256 768 320 199
+                  </a>
                 </p>
               </li>
               
