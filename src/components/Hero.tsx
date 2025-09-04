@@ -10,9 +10,13 @@ const Hero: FC = () => {
           FLEXIBLE<br />FUNCTIONS
         </h1>
         <div className="max-w-3xl mx-auto text-center mb-12">
-          <p className="text-lg text-gray-700">
+          <p className="text-lg text-gray-700 mb-4">
             An industrial research and development AI lab building practical use cases using 
-            current state of the art machine learning systems in different domains.
+            current state of the art machine learning systems in different domains. 
+          </p>
+          <p>
+            We want to do this in the most cost effective and efficient way possible.
+            This will enable alot more people outside of well funded labs to build personalized AI systems for their own use cases.
           </p>
         </div>
         <div className="flex flex-col sm:flex-row justify-center gap-4 mt-8">
