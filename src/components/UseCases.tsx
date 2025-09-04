@@ -78,7 +78,89 @@ const UseCases: FC = () => {
         <h2 className="text-4xl font-bold text-orange-500 mb-12">Use Cases</h2>
         
         <UseCase
-          title="Use Case 1: Intelligent Demand Forecasting"
+          title="Use Case 1: Assisted Differential Diagnosis"
+          challenges={[
+            "Medical diagnosis is complex and time-intensive",
+            "Healthcare providers in resource-constrained settings face significant challenges",
+            "Diagnostic errors can lead to improper treatment and poor patient outcomes",
+          ]}
+          currentSolution={
+            <>
+              <p className="mb-4">
+              Coming up with differential diagnoses is currently done by humans
+              based on signs and symptom presentations, The Doctor’s knowledge, and clinical guidelines.
+              </p>
+              
+
+            </>
+          }
+          ourSolution={
+            <>
+              <p className="mb-4">
+              An advanced LLM application built on user inputs, disease labels, and the Uganda clinical guidelines.
+              Once patient complaints, medical history, etc are passed to it, it returns a differential diagnosis. We are building this to assist doctors.
+              </p>
+              {/* 
+              <p className="mb-4">
+                <strong>Technical Approach:</strong>
+              </p>
+              
+              <ul className="list-disc pl-6 space-y-2">
+                <li>Start with large pre-trained language models</li>
+                <li>Train on extensive medical corpus</li>
+                <li>Fine-tune specifically on patient input patterns</li>
+                <li>Integrate Uganda clinical guidelines and disease correlations</li>
+                <li>Optimize for accuracy with minimal computational resources</li>
+              </ul>
+              */}
+            </>
+          }
+          quote="We are going for this due to our technical expertise given that Daniel Hosana is a doctor, and as a coder Silver can execute on it."
+          demoTitle="Diagnosis Assistant Demo"
+        />
+
+        <UseCase
+          title="Use case 2: Building Web Apps with AI"
+          challenges={[
+            "Building web apps seems to be easier than ever with AI. This has lead to the explosion of a number of platforms trying to turn everyone into a web app builder with prompts",
+            "Internally, we have seen the time we spend on building web apps go from days to hours. ",
+            "However, building secure, scalable and maintainable dynamic web apps is still a challenge"
+          ]}
+          currentSolution={
+            <>
+              <p className="mb-4">AI agents, web development agencies
+
+              </p>
+              
+
+            </>
+          }
+          ourSolution={
+            <>
+              <p className="mb-4">
+               
+We are now publicly experimenting to see how fast we can build web applications with AI agents and the bottlenecks involved.
+
+                
+              </p>
+             
+              {/* 
+              <p>
+                Our system can forecast demand at all levels with high accuracy, predict when and what 
+                customers will purchase, optimize pricing and customer experience, and ensure the right 
+                products are in the right place at the right time.
+              </p>
+              */}
+            </>
+          }
+          quote="We want to come up with a system to build web apps fast but while ensuring that the apps are secure, scalable and maintainable"
+          demoTitle="Web app built with AI"
+        />
+
+
+
+        <UseCase
+          title="Use Case 3: Intelligent Demand Forecasting"
           challenges={[
             "Supply chains are increasingly vulnerable to disruptions",
             "Overstocking leads to waste, tied-up capital, and missed opportunities",
@@ -121,48 +203,9 @@ const UseCases: FC = () => {
                 products are in the right place at the right time. This is the future we're building at Flexible Functions AI."
           demoTitle="Demand Forecasting Demo"
         />
-        
-        <UseCase
-          title="Use Case 2: Assisted Differential Diagnosis"
-          challenges={[
-            "Medical diagnosis is complex and time-intensive",
-            "Healthcare providers in resource-constrained settings face significant challenges",
-            "Diagnostic errors can lead to improper treatment and poor patient outcomes",
-          ]}
-          currentSolution={
-            <>
-              <p className="mb-4">
-              Coming up with differential diagnoses is currently done by humans
-              based on signs and symptom presentations, The Doctor’s knowledge, and clinical guidelines.
-              </p>
-              
 
-            </>
-          }
-          ourSolution={
-            <>
-              <p className="mb-4">
-              An advanced LLM application built on user inputs, disease labels, and the Uganda clinical guidelines.
-              Once patient complaints, medical history, etc are passed to it, it returns a differential diagnosis. We are building this to assist doctors.
-              </p>
-              {/* 
-              <p className="mb-4">
-                <strong>Technical Approach:</strong>
-              </p>
-              
-              <ul className="list-disc pl-6 space-y-2">
-                <li>Start with large pre-trained language models</li>
-                <li>Train on extensive medical corpus</li>
-                <li>Fine-tune specifically on patient input patterns</li>
-                <li>Integrate Uganda clinical guidelines and disease correlations</li>
-                <li>Optimize for accuracy with minimal computational resources</li>
-              </ul>
-              */}
-            </>
-          }
-          quote="We are going for this due to our technical expertise given that Daniel Hosana is a doctor, and as a coder Silver can execute on it."
-          demoTitle="Diagnosis Assistant Demo"
-        />
+        
+
       </div>
     </section>
   );
