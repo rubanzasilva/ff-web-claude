@@ -17,7 +17,7 @@ export interface BlogPost {
       date: "2025-04-05",
       author: "Silver Rubanza",
       excerpt: "Exploring how we built an AI system for assisted differential diagnosis using symptom-disease classification.",
-      externalUrl: "https://nbsanity.com/static/476a4a160704607357fa6afe06955b75/symptom-disease-1.2.html",
+      externalUrl: "https://fsdp-qdora-ucg.flexiblefunctions.com/",
       coverImage: "https://d3q0oijmiduzg2.cloudfront.net/rubanzasilver/symtd.webp" // Optional: you can host thumbnails locally
     },
     {
