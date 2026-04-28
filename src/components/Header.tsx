@@ -29,7 +29,7 @@ const Header: FC<HeaderProps> = ({ showTabs = false, tabs = [] }) => {
               pathname === '/' ? 'text-[var(--ff-ink)]' : 'text-[var(--ff-muted)] hover:text-[var(--ff-ink)]'
             }`}
           >
-            Index
+            Home
           </Link>
           <Link
             href="/about"
