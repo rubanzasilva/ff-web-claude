@@ -3,6 +3,7 @@
 
 import { FC } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 
 interface HeaderProps {
@@ -17,9 +18,16 @@ const Header: FC<HeaderProps> = ({ showTabs = false, tabs = [] }) => {
     <header
       className={`${showTabs ? 'sticky top-0 z-50 bg-white/92 backdrop-blur-[10px]' : ''} border-b border-[var(--ff-rule-soft)]`}
     >
-      <div className="flex items-center justify-between px-16 py-6 md:px-16">
-        <Link href="/" className="inline-flex items-center justify-center w-[60px] h-[18px] border border-[rgba(0,0,0,0.45)] text-[9px] font-bold tracking-[0.12em] text-[rgba(0,0,0,0.7)] uppercase">
-          FF LOGO
+      <div className="flex items-center justify-between px-16 py-6 md:px-16 max-md:px-6">
+        <Link href="/" className="inline-flex items-center justify-center">
+          <Image
+            src="/ff_logo.png"
+            alt="Flexible Functions AI"
+            width={50}
+            height={50}
+            className="object-contain"
+            priority
+          />
         </Link>
 
         <nav className="flex items-center gap-7">
