@@ -2,9 +2,9 @@
 @import "tailwindcss";
 
 :root {
-  --ff-orange: #F39C12;
-  --ff-orange-hover: #FFAD33;
-  --ff-orange-active: #CC8100;
+  --ff-orange: #f97316;
+  --ff-orange-hover: #fb8a3c;
+  --ff-orange-active: #c2410c;
   --ff-ink: #000000;
   --ff-paper: #ffffff;
   --ff-cream: #FEF5E7;
