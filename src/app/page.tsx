@@ -32,17 +32,17 @@ const Home: FC = () => {
       <Header />
 
       <main className="flex-1 flex flex-col items-center px-16 py-[120px] pb-20 text-center max-md:px-6 max-md:py-16">
-        <p className="text-[clamp(40px,5.5vw,64px)] font-bold leading-[1.05] tracking-[-0.01em] uppercase text-[var(--ff-orange)] m-0 mb-8 max-md:mb-6">
+        <p className="text-[88px] font-bold leading-[0.95] tracking-[-0.02em] uppercase text-[var(--ff-orange)] m-0 mb-8 max-w-[1100px] max-md:text-[44px] max-md:mb-5">
           Flexible Functions
         </p>
-        <h1 className="text-[34px] font-bold leading-[1.3] tracking-[-0.01em] m-0 max-w-[820px] max-md:text-[26px]">
+        <h1 className="text-[64px] font-bold leading-[1.3] tracking-[-0.01em] m-0 max-w-[920px] max-md:text-[32px]">
           We solve problems
           <br />
           with technology.
           <span className="inline-block w-[0.55ch] h-[0.78em] bg-[var(--ff-orange)] align-[-0.08em] ml-[0.15ch] animate-[ffBlink_1.05s_steps(1)_infinite]"></span>
         </h1>
         <p className="mt-8 text-[17px] leading-[1.7] text-[rgba(0,0,0,0.7)] max-w-[560px]">
-          Tell us your business problem and let&rsquo;s craft a solution for you.
+          Tell us your business problem and we shall work hand in hand with you to craft a solution that fits how you work.
         </p>
 
         <div className="w-full max-w-[720px] mt-16 text-left">
