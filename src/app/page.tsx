@@ -32,10 +32,10 @@ const Home: FC = () => {
       <Header />
 
       <main className="flex-1 flex flex-col items-center px-16 py-[120px] pb-20 text-center max-md:px-6 max-md:py-16">
-        <p className="text-[88px] font-bold leading-[0.95] tracking-[-0.02em] uppercase text-[var(--ff-orange)] m-0 mb-8 max-w-[1100px] max-md:text-[44px] max-md:mb-5">
+        <p className="text-[72px] font-bold leading-[0.95] tracking-[-0.02em] uppercase text-[var(--ff-orange)] m-0 mb-8 max-w-[1100px] max-md:text-[40px] max-md:mb-5">
           Flexible Functions
         </p>
-        <h1 className="text-[64px] font-bold leading-[1.3] tracking-[-0.01em] m-0 max-w-[920px] max-md:text-[32px]">
+        <h1 className="text-[52px] font-bold leading-[1.3] tracking-[-0.01em] m-0 max-w-[920px] max-md:text-[30px]">
           We solve problems
           <br />
           with technology.
