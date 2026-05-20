@@ -16,10 +16,10 @@ const Footer: FC = () => {
         </a>
         <span className="text-[var(--ff-muted)]">·</span>
         <a
-          href="mailto:hello@flexiblefunctions.ai"
+          href="mailto:hello@flexiblefunctions.com"
           className="transition-colors duration-[120ms] hover:text-[var(--ff-orange)] hover:underline hover:underline-offset-[3px]"
         >
-          hello@flexiblefunctions.ai
+          hello@flexiblefunctions.com
         </a>
       </span>
     </footer>

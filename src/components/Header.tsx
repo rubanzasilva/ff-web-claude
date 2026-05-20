@@ -56,7 +56,7 @@ const Header: FC<HeaderProps> = ({ showTabs = false, tabs = [] }) => {
             Blog
           </Link>
           <a
-            href="mailto:hello@flexiblefunctions.ai"
+            href="mailto:hello@flexiblefunctions.com"
             className="text-[11px] font-semibold tracking-[0.12em] uppercase text-[var(--ff-orange)] hover:text-[var(--ff-orange-hover)] transition-colors duration-[120ms]"
           >
             Contact us

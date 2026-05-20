@@ -141,10 +141,10 @@ const Home: FC = () => {
               <p className="mt-5 text-xs text-[var(--ff-muted)] leading-[1.7]">
                 In the meantime, if anything is urgent —{' '}
                 <a
-                  href="mailto:hello@flexiblefunctions.ai"
+                  href="mailto:hello@flexiblefunctions.com"
                   className="text-xs transition-colors duration-[120ms] hover:text-[var(--ff-orange)] hover:underline hover:underline-offset-[3px]"
                 >
-                  hello@flexiblefunctions.ai
+                  hello@flexiblefunctions.com
                 </a>
                 .
               </p>
